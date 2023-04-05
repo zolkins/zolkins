@@ -13,8 +13,8 @@ jobs:
         id: snake-gif
 
         with:
+          outputs: dist/github-contribution-grid-snake.svg?color_snake=green&color_dots=#bfd6f6,#fff87a,#f1fa50,#eded2f,#d6d027
           github_user_name: ${{ github.repository_owner }}
-          svg_out_path: dist/github-contribution-grid-snake.svg
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
           target_branch: output
